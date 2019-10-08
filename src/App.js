@@ -3,8 +3,11 @@ import "./App.css";
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
 
-import Display from "../src/components/DisplayComponents/Display";
+import Numbers from "../src/components/ButtonComponents/NumberButtons/Numbers";
+import Specials from "../src/components/ButtonComponents/SpecialButtons/Specials";
+import Operators from "../src/components/ButtonComponents/OperatorButtons/Operators";
 
+import Display from "../src/components/DisplayComponents/Display";
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
@@ -20,7 +23,11 @@ function App() {
 		<div className="container">
 			<Logo />
 			<Display />
-			<div className="App">{/* STEP 4 - Render your components here and be sure to properly import/export all files */}</div>
+			<div className="App">{/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+			<Numbers />
+			<Specials />
+			<Operators />
+			</div>
 		</div>
 	);
 }
